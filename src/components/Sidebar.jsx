@@ -19,7 +19,7 @@ function Sidebar() {
           </li>
         )}
 
-        {(role === "Admin" || role === "District Officer") && (
+        {(role === "Admin" || role === "District Officer" || role === "Field Officer") && (
           <li className={location.pathname === "/beneficiaries" ? "active" : ""}>
             <Link to="/beneficiaries">Beneficiaries</Link>
           </li>
